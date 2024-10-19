@@ -20,7 +20,7 @@ class BalanceResource:
             )
 
         # Build balance request
-        url = 'https://rainstorm.city/api'
+        url = 'https://rpc.nano.to'
         post_body = {
             'action': 'account_balance',
             'account': address
@@ -61,6 +61,7 @@ class BalanceResource:
                 title="Failed to retrieve price"
             )
         price = api_resp['price']
+        price = round(price, 2)
         usd_balance = price * balance
         usd_balance = round(usd_balance, 2)
 

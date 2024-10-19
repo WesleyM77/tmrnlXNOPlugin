@@ -7,7 +7,7 @@
     <div class="screen">
       <div class="view view--full">
         <div class="layout">
-          <div class="columns">
+          <div class="columns" style="align-items: center">
             <div class="column">
               <div class="markdown">
                 <img src="https://content.nano.org/nano-currency-symbol/symbol-blue.svg" style="width:100px;height:134px;">
@@ -17,16 +17,16 @@
               <table class="table">
                 <tbody>
                 <tr>
-                  <td><span class="title title--small">Balance</span></td>
+                  <td><span class="title title--small">Balance (XNO)</span></td>
                   <td><span class="label">{{ balance }}</span></td>
                 </tr>
                 <tr>
                   <td><span class="title title--small">Balance (USD)</span></td>
-                  <td><span class="label">{{ USDBalance }}</span></td>
+                  <td><span class="label">${{ USDBalance }}</span></td>
                 </tr>
                 <tr>
                   <td><span class="title title--small">Conversion Rate</span></td>
-                  <td><span class="label">{{ pricePerCoin }}</span></td>
+                  <td><span class="label">${{ pricePerCoin }}</span></td>
                 </tr>
                 </tbody>
               </table>
